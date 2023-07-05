@@ -1,6 +1,7 @@
 .container{
 
     margin :178px 30px 30px 30px;
+    width:100%;
 }
 .onentry{
 border: 1px solid;
@@ -10,6 +11,10 @@ border-radius: 20px;
     border-top: 5px solid #5F2FA2;
     background: #EFEAF6;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.img{
+    height: 150px;
+    width:120px;
 }
 .imgprof{
     display:flex;
@@ -76,4 +81,26 @@ border-radius: 20px;
     line-height: 20px;
     text-transform: capitalize;
 
+ }
+ @media(max-width:560px){
+    .imgprof{
+        display:flex;
+        flex-direction: column;
+    }
+    .talktype{
+        font-size: 20px;
+    }
+    .title{
+       font-size:18px;
+    }
+    .table{
+        
+        line-height: 18px;
+        border-spacing: 5px; /* Adjust the value to set the desired margin between rows */
+    
+     }
+     .img{
+        height: 100px;
+        width:75px;
+    }
  }

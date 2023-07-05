@@ -1,12 +1,13 @@
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     margin: 30px 30px 15px 30px;
     padding: 30px;
-    
+
     border-radius: 20px;
     border-top: 5px solid #562B93;
     background: rgba(205, 191, 226, 0.54);
@@ -22,8 +23,11 @@
 }
 
 .logo {
+    height: 100px;
+    width: 161px;
     display: inline-block;
     margin-right: 40px;
+
 }
 
 .dateName {
@@ -37,7 +41,7 @@
     font-weight: 400;
     font-size: 40px;
     text-decoration-line: underline;
-    text-shadow: 5px 5px  15px #B59FD4;
+    text-shadow: 5px 5px 15px #B59FD4;
 
 
 }
@@ -55,4 +59,80 @@
     font-family: mulish;
     font-weight: 400;
 
+}
+
+@media(max-width:540px) {
+    .mainheading {
+        font-size: 25px;
+    }
+
+    .container {
+
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .onentry {
+        margin: 20px 0 20px 0;
+        padding: 5px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 121px;
+
+        margin-right: 20px;
+
+    }
+
+    .confdate {
+
+
+        font-size: 22px;
+    }
+
+    .conDes {
+
+        font-size: 18px;
+
+
+    }
+}
+
+@media(max-width:360px) {
+    .mainheading {
+        font-size: 25px;
+    }
+
+    .container {
+
+        padding: 5px;
+        margin: 15px 5px 15x 5px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 80px;
+
+        margin-right: 10px;
+
+    }
+
+    .onentry {
+        margin: 20px 0 20px 0;
+        padding: 5px;
+    }
+
+    .confdate {
+
+
+        font-size: 20px;
+    }
+
+    .conDes {
+
+        font-size: 16px;
+
+
+    }
 }

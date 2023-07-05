@@ -80,3 +80,15 @@ width: 100%;
     margin: 0 auto;
   }
   
+  @media(max-width:630px)
+  {
+  .inner{
+    font-size:15px;
+margin:0px;
+  }
+  .inner1{
+    font-size:15px;
+    margin:0px;
+  }
+  }
+  

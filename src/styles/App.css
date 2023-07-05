@@ -10,3 +10,8 @@ td{
 button:hover{
     background: aliceblue;
 }
+@media(max-width:540px){
+ .mainheading{
+    font-size:25px ;
+ }
+}

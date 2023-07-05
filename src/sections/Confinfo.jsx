@@ -20,7 +20,7 @@ function Confinfo(props) {
                 <div >
                     <div className={InfoStyle.logoName}>
                         <div className={InfoStyle.logo}>
-                            <img src={data.logo} alt='logo' height='100' width='161'/>
+                            <img src={data.logo} alt='logo'className={InfoStyle.logo}/>
 
                         </div>
                         <div className={InfoStyle.dateName}>

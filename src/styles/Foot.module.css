@@ -14,8 +14,8 @@
 
 .inst {
 
-    width: 20%;
-    margin:20px;
+    width: 30%;
+    margin:10px;
     padding: 10px;
     
 }
@@ -34,9 +34,8 @@
 }
 
 .aboutinst {
-    width:70%;
-    margin:20px;
-    padding:10px;
+    width:60%;
+    margin:10px;
     
 }
 .textinst{
@@ -55,3 +54,21 @@ font-family: mulish;
     opacity: 1;
     color:white;
 }
+@media(max-width:540px){
+    .container {
+        display: flex;
+        
+      
+        flex-direction: column;
+        
+    
+    }
+    .inst{
+        width: 100%;
+    }
+    .aboutinst {
+        width:100%;
+      
+        
+    }
+   }

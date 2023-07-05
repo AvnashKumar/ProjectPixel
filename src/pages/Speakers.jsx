@@ -26,7 +26,7 @@ function Speakers(props) {
             <div className={SpeakerStyle.imgprof} >
 
               <div className={SpeakerStyle.imgbtn}>
-                <img height="150" width='120' src={item.ImgLink} />
+                <img className={SpeakerStyle.img} src={item.ImgLink} />
                 <a href={item.ProfileLink} target="_main"><button>Profile Link</button></a>
               </div>
               

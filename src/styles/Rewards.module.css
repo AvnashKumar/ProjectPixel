@@ -4,7 +4,7 @@
     background: #EFEAF6;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     height: 480px;
-    width: 580px;
+    width: 520px;
     padding: 20px;
     margin: 15px 30px 15px 30px;
     display: inline-block;
@@ -79,3 +79,31 @@
 
     }
 }
+@media(max-width:540px){
+    .mainheading{
+       font-size:25px ;
+    }
+    .container{
+        width:350px;
+        padding: 5px;
+      margin: 5px;
+    }
+    .onentry{
+        margin: 20px 0 20px 0;
+    padding: 5px;
+    }
+   }
+   @media(max-width:360px){
+    .mainheading{
+       font-size:25px ;
+    }
+    .container{
+        width:250px;
+        padding: 5px;
+      margin: 15px 5px 15px 5px;
+    }
+    .onentry{
+        margin: 20px 0 20px 0;
+    padding: 5px;
+    }
+   }

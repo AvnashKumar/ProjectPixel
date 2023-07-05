@@ -73,3 +73,20 @@
 
 
 }
+@media(max-width:540px)
+{
+.mainheading{
+  font-size:25px;
+}
+
+  .imge{
+    width:280px ;
+    height:180px;
+  }
+  .container{
+    width:320px ;
+    height: 300px;
+  }
+
+
+}
