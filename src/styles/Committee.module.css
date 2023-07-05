@@ -1,0 +1,75 @@
+.container {
+    margin: 178px 30px 30px 30px;
+    text-align: center;
+}
+
+.profcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.onentry {
+    border-top: 3px solid #5F2FA2;
+    border-radius: 5px;
+
+    background: #E8E9F2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+    justify-content: start;
+    align-items: center;
+    width: 300px
+}
+
+.mainheading {
+    color: #562B93;
+    font-family: Acme;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-shadow: 5px 5px 12px #B59FD4;
+
+
+}
+
+.title {
+    color: #562B93;
+    font-family: Acme;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+
+}
+
+.table {
+    vertical-align: top;
+    color: #562B93;
+    font-size: 15px;
+    font-family: Mulish;
+    font-weight: 500;
+    line-height: 20px;
+    border-spacing: 10px;
+
+}
+
+.field {
+    color: #562B93;
+    font-size: 15px;
+    font-family: Mulish;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: capitalize;
+
+}
+
+.profbtn {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}

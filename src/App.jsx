@@ -1,58 +1,38 @@
-import { useState } from 'react'
-import pixelLogo from '/pixel-white.svg'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Hero from './pages/Hero';
+import Speakers from './pages/Speakers';
+import Uperheader from './components/Uperheader';
+import Navbar from './components/Navbar';
+import Committee from './pages/Committee';
+import Sponsorship from './pages/Sponsorship';
+import Awards from './pages/Awards';
+import Contact from './pages/Contact';
+import Registration from './pages/Registration'
+import Foot from './sections/Foot'
 import './styles/App.css'
-import './styles/Cards.css'
-import Card from './components/card'
-import fetchAPI from './utils/fetchAPI'
+
+let conId = '647f315f62cdb3a26174fc38';
 
 function App() {
-  const [loading, setLoading] = useState(false)
-  const [data, setData] = useState([])
-
   return (
-    <>
-      <div>
-        <a href='https://pixelperfect.onrender.com/' target='_blank'>
-          <img src={pixelLogo} className='logo' alt='Vite logo' />
-        </a>
+    <Router>
+      <div className="maindiv">
+        <Uperheader />
+        <Navbar  />
+        <Routes>
+          <Route path="/" element={<Hero con={conId} />} />
+          <Route path="/speakers" element={<Speakers con={conId} />} />
+          <Route path="/committee" element={<Committee con={conId}  />} />
+          <Route path="/sponsorship" element={<Sponsorship con={conId}  />} />
+          <Route path="/awards" element={<Awards con={conId} />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/contact" element={<Contact con={conId}  />} />
+        </Routes>
+        <Foot con={conId} />
       </div>
-      <h1 className='title'>Pixel Perfect</h1>
-      <button onClick={() => fetchAPI(setData, setLoading)}>
-        {loading ? 'Loading...' : 'Fetch API'}
-      </button>
-
-      {!loading && (
-        <div id='cards-wrapper' className='cards-wrapper'>
-          {data.length > 0 ? (
-            data.map((item) => {
-              return <Card key={item.id} item={item} />
-            })
-          ) : (
-            <>
-              <Card
-                single
-                item={{
-                  id: 'default',
-                  title1: 'Click on the fetch API button above',
-                  title2: 'The fetched result will be shown here',
-                }}
-              />
-            </>
-          )}
-        </div>
-      )}
-      <p className='read-the-docs'>
-        Access the docs at{' '}
-        <a
-          href='https://conference.cyclic.app/api-docs'
-          target='_blank'
-          rel='noopener noreferrer'>
-          <code>conference.cyclic.app/api-docs</code>
-        </a>
-        .
-      </p>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

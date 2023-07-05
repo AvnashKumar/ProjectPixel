@@ -1,7 +1,7 @@
-export default function fetchAPI(setData, setLoading) {
+export default function fetchAPI(setData,url,setLoading) {
   setLoading(true)
   setData([])
-  fetch(import.meta.env.VITE_API_URL + '/awards', {
+  fetch(url, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -10,7 +10,7 @@ export default function fetchAPI(setData, setLoading) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data)
+      //console.log(data)
       setData(data)
     })
     .catch((error) => console.error(error))
