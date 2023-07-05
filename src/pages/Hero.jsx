@@ -1,6 +1,6 @@
 import React from 'react'
 import Announcements from '../sections/Announcement';
-import Confinfo from '../Sections/Confinfo';
+import Confinfo from '../sections/Confinfo';
 import Dates from '../sections/Dates';
 import Imageslider from '../sections/Imageslider';
 import Rewards from '../sections/Rewards';
