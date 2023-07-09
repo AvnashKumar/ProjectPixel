@@ -5,7 +5,7 @@ import Dates from '../sections/Dates';
 import Imageslider from '../sections/Imageslider';
 import Rewards from '../sections/Rewards';
 import Sponsors from '../sections/Sponsors';
-import Herostyle from '../styles/Hero.module.css'
+import Herostyle from '../styles/pages/Hero.module.css'
 
 export default function Hero(props) {
     let conId=props.con;

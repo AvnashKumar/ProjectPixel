@@ -1,5 +1,5 @@
 .container {
-    margin: 178px 30px 30px 30px;
+    margin-top: 140px;
     text-align: center;
 
 
@@ -12,8 +12,6 @@
     font-size: 40px;
     text-decoration-line: underline;
     text-shadow: 5px 5px 12px #B59FD4;
-
-
 }
 
 .sponcontent{
@@ -36,6 +34,10 @@
     font-weight: 400;
     font-size: 25px;
 }
+.sponimg{
+height:100px;
+width:200px;
+}
 .sponame{
     color: #562B93;
     font-size: 20px;
@@ -46,7 +48,28 @@
 .onentry:hover{
     border:2px solid #562B93;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
- 
+@media(max-width:560px)
+{
+    .onentry{
+       
+        margin:10px;
+       
+    }
+    .type{
+        
+        font-size: 18px;
+    }
+    .sponimg{
+    height:80px;
+    width:160px;
+    }
+    .sponame{
+    
+        font-size: 16px;
+        
+    }
+
 }
 

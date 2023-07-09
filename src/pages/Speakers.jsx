@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
-import SpeakerStyle from '../styles/Speakers.module.css'
+import SpeakerStyle from '../styles/pages/Speakers.module.css'
+import Loadingicon from '../components/Loadingicon';
 
 
 function Speakers(props) {
@@ -65,7 +66,7 @@ function Speakers(props) {
             </div>
           </div>
         )) :
-        <div>Loading...</div>
+        <div><Loadingicon /></div>
       }
     </div>
   )

@@ -9,7 +9,7 @@
     margin: 15px 30px 15px 15px;
     display: inline-block;
     text-align: center;
-overflow: hidden;
+    overflow: hidden;
 }
 
 .mainheading {
@@ -32,16 +32,14 @@ overflow: hidden;
 }
 
 .ancontent {
-    animation: scrollAnimation 20s linear infinite;
+    animation: scrollAnimation 25s linear infinite;
     
-    /* Adjust duration as needed */
     animation-play-state: running;
 }
 
 .ancontainer:hover .ancontent {
     animation-play-state: paused;
     
-    /* Pause the animation on hover */
 }
 
 .onentry {
@@ -74,14 +72,14 @@ overflow: hidden;
 
 }
 
+
 @keyframes scrollAnimation {
     0% {
-        transform: translateY(30px);
+        transform: translateY(10%);
     }
 
     100% {
         transform: translateY(-100%);
-        /* Move the content upward by 100% of its height */
     }
 }
 @media(max-width:540px){
@@ -89,26 +87,29 @@ overflow: hidden;
        font-size:25px ;
     }
     .container{
-        width:350px;
+        width:90%;
         padding: 5px;
-      margin: 5px;
+        margin: 15px;
+
+       
     }
     .onentry{
         margin: 20px 0 20px 0;
-    padding: 5px;
-    }
-   }
-   @media(max-width:360px){
-    .mainheading{
-       font-size:25px ;
-    }
-    .container{
-        width:250px;
         padding: 5px;
-      margin: 15px 5px 15x 5px;
     }
-    .onentry{
-        margin: 20px 0 20px 0;
-    padding: 5px;
+    .ancontainer {
+
+        margin: 15px;
     }
+.ancontent {
+    animation: scrollAnimation 35s linear infinite;
+    
+    
+}
+.descrip {
+    
+    line-height: 17px;
+
+}
    }
+   

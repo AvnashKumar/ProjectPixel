@@ -9,29 +9,33 @@ import Sponsorship from './pages/Sponsorship';
 import Awards from './pages/Awards';
 import Contact from './pages/Contact';
 import Registration from './pages/Registration'
-import Foot from './sections/Foot'
+import Foot from './components/Foot'
 import './styles/App.css'
 
 let conId = '647f315f62cdb3a26174fc38';
 
 function App() {
   return (
-    <Router>
-      <div className="maindiv">
+    <div className="maindiv">
+
+      <Router>
         <Uperheader />
-        <Navbar  />
+        <Navbar />
+
         <Routes>
           <Route path="/" element={<Hero con={conId} />} />
           <Route path="/speakers" element={<Speakers con={conId} />} />
-          <Route path="/committee" element={<Committee con={conId}  />} />
-          <Route path="/sponsorship" element={<Sponsorship con={conId}  />} />
+          <Route path="/committee" element={<Committee con={conId} />} />
+          <Route path="/sponsorship" element={<Sponsorship con={conId} />} />
           <Route path="/awards" element={<Awards con={conId} />} />
           <Route path="/registration" element={<Registration />} />
-          <Route path="/contact" element={<Contact con={conId}  />} />
+          <Route path="/contact" element={<Contact con={conId} />} />
         </Routes>
+
         <Foot con={conId} />
-      </div>
-    </Router>
+      </Router>
+
+    </div>
   );
 }
 

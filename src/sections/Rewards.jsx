@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
-import RewardStyle from '../styles/Rewards.module.css'
+import RewardStyle from '../styles/sections/Rewards.module.css'
 import {FaAward} from "react-icons/fa";
+import Loadingicon from '../components/Loadingicon';
 
 function Rewards(props) {
   const [data, setData] = useState([]);
@@ -22,7 +23,7 @@ function Rewards(props) {
 
               </div>
             ))
-            : <div>Loading..</div>}
+            : <div><Loadingicon/></div>}
         </div></div>
     </div>
   )

@@ -1,7 +1,8 @@
 import { useState,useEffect } from 'react'
 
 import fetchAPI from '../utils/fetchAPI'
-import SponStyle from '../styles/Sponsorship.module.css'
+import SponStyle from '../styles/pages/Sponsorship.module.css'
+import Loadingicon from '../components/Loadingicon';
 function Sponsorship(props) {
   const [loading, setLoading] = useState(false)
 
@@ -20,12 +21,12 @@ function Sponsorship(props) {
       <div key={item.id} className={SponStyle.onentry}>
         <p className={SponStyle.type}>{item.type}</p>
         
-        <img src={item.logo} style={{height:'100px'}} className={SponStyle.sponimg}/>
+        <img src={item.logo} className={SponStyle.sponimg}/>
         <p className={SponStyle.sponame}>{item.name}</p>
         
       </div>
     )):
-    <div>wait....</div>}
+    <div><Loadingicon /></div>}
   </div>
   </div>
   

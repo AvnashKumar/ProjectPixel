@@ -7,7 +7,6 @@
     flex-direction: column;
     margin: 30px 30px 15px 30px;
     padding: 30px;
-
     border-radius: 20px;
     border-top: 5px solid #562B93;
     background: rgba(205, 191, 226, 0.54);
@@ -51,6 +50,7 @@
     font-family: Acme;
     font-weight: 400;
     font-size: 25px;
+    text-align: center;
 }
 
 .conDes {
@@ -58,6 +58,7 @@
     font-size: 18px;
     font-family: mulish;
     font-weight: 400;
+    word-spacing: 2px;
 
 }
 
@@ -88,12 +89,12 @@
     .confdate {
 
 
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .conDes {
 
-        font-size: 18px;
+        font-size: 15px;
 
 
     }
@@ -126,12 +127,12 @@
     .confdate {
 
 
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .conDes {
 
-        font-size: 16px;
+        font-size: 13px;
 
 
     }

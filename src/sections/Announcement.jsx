@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
-import AncStyle from '../styles/Announcement.module.css'
-import {HiSpeakerphone} from "react-icons/hi";
+import AncStyle from '../styles/sections/Announcement.module.css'
+import { HiSpeakerphone } from "react-icons/hi";
+import Loadingicon from '../components/Loadingicon';
 
 function Announcement(props) {
   const [data, setData] = useState([]);
@@ -11,20 +12,23 @@ function Announcement(props) {
 
   return (
     <div className={AncStyle.container}>
-      <p className={AncStyle.mainheading}> <HiSpeakerphone style={{paddingTop:'10px'}}/>Announcement </p>
+      <p className={AncStyle.mainheading}> <HiSpeakerphone style={{ paddingTop: '10px' }} />Announcement </p>
       <div className={AncStyle.ancontainer}>
         <div className={AncStyle.ancontent}>
-        {!loading ? data.map(item => (
-          <div key={item.id} className={AncStyle.onentry}>
-            <p className={AncStyle.title} > {item.title}</p>
-            <p className={AncStyle.descrip}>{item.description}</p>
+          {!loading ? data.map(item => (
 
-          </div>
 
-        )) :
-          <div>Loading Wait....</div>}
+            <div key={item.id} className={AncStyle.onentry}>
+              <p className={AncStyle.title} > {item.title}</p>
+              <p className={AncStyle.descrip}>{item.description}</p>
+
+            </div>
+
+          ))
+            :
+            <div><Loadingicon /></div>}
+        </div>
       </div>
-    </div>
     </div>
   )
 }

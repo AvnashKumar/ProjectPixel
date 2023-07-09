@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
 import formatDate from '../utils/formatDate';
-import DateStyle from '../styles/Dates.module.css'
+import DateStyle from '../styles/sections/Dates.module.css'
 import {BsCalendarDate} from "react-icons/bs";
+import Loadingicon from '../components/Loadingicon';
 
 
 function Dates(props) {
@@ -39,7 +40,7 @@ function Dates(props) {
               <br /><br />
             </div>
           )) :
-          <div>Loading...</div>}
+          <div><Loadingicon/></div>}
       </div>
     </div>
 

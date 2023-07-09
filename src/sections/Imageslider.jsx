@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import fetchAPI from '../utils/fetchAPI';
-import SliderStyle from '../styles/Imageslider.module.css';
+import SliderStyle from '../styles/sections/Imageslider.module.css';
 import { MdAddAPhoto } from 'react-icons/md';
+import Loadingicon from '../components/Loadingicon';
 
 function Imageslider(props) {
   const [data, setData] = useState([]);
@@ -44,7 +45,7 @@ function Imageslider(props) {
           <p className={SliderStyle.imgdesc} >{currentImageName}</p>
         </div>
       ) : (
-        <div>Loading..</div>
+        <div><Loadingicon/></div>
       )}
     </div>
   );

@@ -1,7 +1,8 @@
 .container{
 
-    margin :178px 30px 30px 30px;
+    margin-top :140px;
     width:100%;
+  
 }
 .onentry{
 border: 1px solid;
@@ -26,7 +27,7 @@ border-radius: 20px;
     font-size: 40px;
     text-decoration-line: underline;
     text-shadow: 5px 5px 12px #B59FD4;
-
+    text-align: center;
 
 }
 .talktype{
@@ -88,19 +89,27 @@ border-radius: 20px;
         flex-direction: column;
     }
     .talktype{
-        font-size: 20px;
+        font-size: 18px;
     }
     .title{
-       font-size:18px;
+       font-size:16px;
     }
     .table{
+        font-size: 13px;
         
-        line-height: 18px;
-        border-spacing: 5px; /* Adjust the value to set the desired margin between rows */
+        line-height: 16px;
+        border-spacing: 8px; 
     
      }
      .img{
         height: 100px;
         width:75px;
     }
+    .field{
+       
+        font-size: 13px;
+        
+        line-height: 16px;
+       
+     }
  }

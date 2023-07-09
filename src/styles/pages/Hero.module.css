@@ -1,7 +1,7 @@
 .container {
     background:#E8E9F2;
-width:100%;
-    margin-top: 130px;
+    width:100%;
+    margin-top: 140px;
     overflow: hidden;
 }
 .rwdSpon{
@@ -39,7 +39,7 @@ align-items: center;
     .container {
         background:#E8E9F2;
     
-        margin-top: 150px;
+        
         overflow: hidden;
     }
 }

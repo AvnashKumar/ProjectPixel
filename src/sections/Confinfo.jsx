@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
 import formatDate from '../utils/formatDate';
-import InfoStyle from '../styles/Confinfo.module.css'
+import InfoStyle from '../styles/sections/Confinfo.module.css'
+import Loadingicon from '../components/Loadingicon';
 
 
 
@@ -20,7 +21,7 @@ function Confinfo(props) {
                 <div >
                     <div className={InfoStyle.logoName}>
                         <div className={InfoStyle.logo}>
-                            <img src={data.logo} alt='logo'className={InfoStyle.logo}/>
+                            <img src={data.logo} alt='logo' className={InfoStyle.logo} />
 
                         </div>
                         <div className={InfoStyle.dateName}>
@@ -31,17 +32,9 @@ function Confinfo(props) {
                     <div className={InfoStyle.conDes}>
                         <p>{data.aboutConf}</p>
                     </div>
-                    
-                    
-
-
-
-
-
-
-
                 </div>
-                : <div> Loading...</div>
+                : 
+                <div><Loadingicon /></div>
             }
         </div>
 

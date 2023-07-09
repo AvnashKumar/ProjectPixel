@@ -2,7 +2,8 @@ import React from 'react'
 
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
-import ComtStyle from '../styles/Committee.module.css'
+import ComtStyle from '../styles/pages/Committee.module.css'
+import Loadingicon from '../components/Loadingicon';
 
 
 function Committee(props) {
@@ -60,7 +61,7 @@ function Committee(props) {
             </div>
 
         )) :
-        <div>Loading....</div>}
+        <div><Loadingicon /></div>}
 </div></div>
     
   )

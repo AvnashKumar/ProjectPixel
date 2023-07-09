@@ -1,0 +1,31 @@
+.container{
+width:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.loader {
+    margin-top: 20px;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #562B93;
+    
+    width: 50px;
+    height: 50px;
+    animation: spin 2s ease-in-out infinite;
+  }
+  .text{
+    margin-top: 4px;;
+    color:#562B93;
+    font-size:18px;
+    font-family: acme;
+
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

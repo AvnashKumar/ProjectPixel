@@ -6,15 +6,13 @@
     justify-content: space-evenly;
     background-color: #7728e7;
     color: aliceblue;
-    position: sticky;
-    bottom:0;
-    width: 100%;
+
 
 }
 
 .inst {
 
-    width: 30%;
+    width: 25%;
     margin:10px;
     padding: 10px;
     
@@ -34,21 +32,31 @@
 }
 
 .aboutinst {
-    width:60%;
+    width:65%;
     margin:10px;
     
 }
 .textinst{
 font-size: 18px;
+font-family: mulish;
 }
+.textinst2{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: mulish;
+
+    }
 .textabouth{
     font-size: 30px;
     font-weight: 600;
+    padding:10px;
 
 }
 .textabout{
-font-size:16px;
+font-size:14px;
 font-family: mulish;
+padding:10px;
+opacity: 0.9;
 }
 .iconitem:hover{
     opacity: 1;
@@ -65,9 +73,11 @@ font-family: mulish;
     }
     .inst{
         width: 100%;
+        margin:0px;
     }
     .aboutinst {
         width:100%;
+        margin:0px;
       
         
     }

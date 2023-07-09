@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
-import ContactStyle from '../styles/Contact.module.css'
+import ContactStyle from '../styles/pages/Contact.module.css'
+import Loadingicon from '../components/Loadingicon';
 
 function Contact(props) {
   const [data, setData] = useState([]);
@@ -10,7 +11,7 @@ function Contact(props) {
   return (
     <div className={ContactStyle.container}>
  <p className={ContactStyle.mainheading}>Contact Us </p>
-
+ <div className={ContactStyle.concontainer}>
       {!loading ?
         data.map(item => (
           <div key={item.id} className={ContactStyle.onentry}>
@@ -18,7 +19,7 @@ function Contact(props) {
             <div className={ContactStyle.imgprof} >
 
               <div className={ContactStyle.imgbtn}>
-                <img height="150" width='120' src={item.imgLink} />
+                <img className={ContactStyle.img} src={item.imgLink} />
                 <a href={item.profileLink} target="_main"><button>Profile Link</button></a>
               </div>
               <div >
@@ -58,10 +59,11 @@ function Contact(props) {
                 </table>
               </div>
             </div>
-          </div>
+            </div>
+          
         )) :
-        <div>Loading...</div>}
-
+        <div><Loadingicon /></div>}
+</div>
     </div>
   )
 }

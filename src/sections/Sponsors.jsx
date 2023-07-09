@@ -1,7 +1,8 @@
 import { useState,useEffect } from 'react'
 import fetchAPI from '../utils/fetchAPI'
-import SponStyle from '../styles/Sponsors.module.css'
+import SponStyle from '../styles/sections/Sponsors.module.css'
 import {FaHandHoldingUsd} from "react-icons/fa";
+import Loadingicon from '../components/Loadingicon';
 
 function Appp(props){
     const [data, setData] = useState([]);
@@ -24,7 +25,7 @@ function Appp(props){
             
           </div>
         )):
-        <div>wait....</div>}
+        <div><Loadingicon/></div>}
       </div>
       </div>
       </div>
