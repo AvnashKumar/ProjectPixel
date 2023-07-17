@@ -14,7 +14,7 @@ function Announcement(props) {
     <div className={AncStyle.container}>
       <p className={AncStyle.mainheading}> <HiSpeakerphone style={{ paddingTop: '10px' }} />Announcement </p>
       <div className={AncStyle.ancontainer}>
-        <div className={AncStyle.ancontent}>
+      <div className={!loading ? AncStyle.ancontent : AncStyle.load }>
           {!loading ? data.map(item => (
 
 
@@ -23,12 +23,12 @@ function Announcement(props) {
               <p className={AncStyle.descrip}>{item.description}</p>
 
             </div>
-
-          ))
+            
+          )) 
             :
-            <div><Loadingicon /></div>}
+            <div> <Loadingicon /></div>}
         </div>
-      </div>
+        </div>
     </div>
   )
 }

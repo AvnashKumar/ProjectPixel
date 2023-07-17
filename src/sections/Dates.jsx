@@ -16,7 +16,7 @@ function Dates(props) {
   return (
     <div className={DateStyle.container}>
       <p className={DateStyle.mainheading}><BsCalendarDate style={{paddingTop:'10px'}}/>Important Dates </p>
-      <div className={DateStyle.datescontainer}>
+      <div className={!loading ? DateStyle.datescontainer : DateStyle.load }>
 
         {!loading ?
           data.map(item => (

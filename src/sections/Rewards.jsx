@@ -13,7 +13,7 @@ function Rewards(props) {
     <div className={RewardStyle.container}>
       <p className={RewardStyle.mainheading}> <FaAward style={{paddingTop:'10px'}}/>Rewards </p>
       <div className={RewardStyle.ancontainer}>
-        <div className={RewardStyle.ancontent}>
+        <div className={!loading ? RewardStyle.ancontent : RewardStyle.load }>
           {!loading ?
             data.map(item => (
               <div key={item.id} className={RewardStyle.onentry}>

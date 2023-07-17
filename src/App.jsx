@@ -17,10 +17,10 @@ let conId = '647f315f62cdb3a26174fc38';
 function App() {
   return (
     <div className="maindiv">
-
+      
       <Router>
-        <Uperheader />
-        <Navbar />
+      <Uperheader />
+      <Navbar />
 
         <Routes>
           <Route path="/" element={<Hero con={conId} />} />
@@ -32,9 +32,9 @@ function App() {
           <Route path="/contact" element={<Contact con={conId} />} />
         </Routes>
 
-        <Foot con={conId} />
+<Foot con={conId} />
       </Router>
-
+      
     </div>
   );
 }

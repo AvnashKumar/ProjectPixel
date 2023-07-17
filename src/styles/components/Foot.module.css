@@ -4,7 +4,8 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    background-color: #7728e7;
+    
+    background-color: #5F2FA2;
     color: aliceblue;
 
 
@@ -15,6 +16,8 @@
     width: 25%;
     margin:10px;
     padding: 10px;
+    border-right: 1px solid aliceblue;
+    
     
 }
 .icons{
@@ -34,15 +37,15 @@
 .aboutinst {
     width:65%;
     margin:10px;
-    
+   
 }
 .textinst{
-font-size: 18px;
+font-size: 16px;
 font-family: mulish;
 }
 .textinst2{
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: mulish;
 
     }

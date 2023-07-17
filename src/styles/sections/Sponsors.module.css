@@ -38,6 +38,8 @@ overflow: auto;
     padding:20px;
     margin:10px;
     border-radius:20px 0 20px 0;
+    border:2px solid transparent;
+
 }
 .type{
     color: #562B93;
