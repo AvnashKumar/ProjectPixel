@@ -1,6 +1,6 @@
 .container {
     margin-top: 140px;
-
+overflow-y: hidden;
 }
 
 .concontainer {
@@ -16,7 +16,10 @@
     display: inline-block;
     border-top: 3px solid #5F2FA2;
     background: #EFEAF6;
+
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: scrollAnimation 1s ease-in-out 1;
+
 }
 
 .imgprof {
@@ -36,13 +39,20 @@
 
 .title {
     color: #562B93;
+    text-decoration: underline;
     font-family: Acme;
     font-weight: 400;
     font-size: 20px;
+    word-spacing: 3px;
     text-transform: capitalize;
 
 }
+.onentry:hover{
+    border-top: 4px solid #5F2FA2;
+    box-shadow: 0px 12px 10px 0px rgba(0, 0, 0, 0.35);
+    background: #dddef5;
 
+}
 .imgbtn {
     margin-right: 20px;
     display: flex;
@@ -56,8 +66,8 @@
     vertical-align: top;
     color: purple;
     font-size: 15px;
-    font-family: Mulish;
-    font-weight: 500;
+    font-family: 'Source Serif 4', serif;
+        font-weight: 500;
     line-height: 20px;
     border-spacing: 10px;
 
@@ -72,8 +82,8 @@
 .field {
     color: #562B93;
     font-size: 15px;
-    font-family: Mulish;
-    font-weight: bold;
+    font-family: 'Source Serif 4', serif;
+        font-weight: bold;
     line-height: 20px;
     text-transform: capitalize;
 
@@ -124,4 +134,14 @@
 
     }
 
+}
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+
+    }
 }

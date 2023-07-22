@@ -9,16 +9,29 @@ button{
     color: navy;
     width:120px;
     height: 30px;
+    font-family: 'Source Serif 4', serif;
+
 }
 td{
-    vertical-align: top; /* Set the vertical alignment to top */
-
+    vertical-align: top; 
 }
 button:hover{
     background: aliceblue;
+
 }
+
 @media(max-width:540px){
  .mainheading{
     font-size:25px ;
  }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }

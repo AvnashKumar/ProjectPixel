@@ -11,6 +11,8 @@
     border-top: 5px solid #562B93;
     background: rgba(205, 191, 226, 0.54);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: scaleUp 2s forwards;
+
 }
 
 .logoName {
@@ -27,6 +29,7 @@
     display: inline-block;
     margin-right: 40px;
 
+
 }
 
 .dateName {
@@ -41,6 +44,7 @@
     font-size: 40px;
     text-decoration-line: underline;
     text-shadow: 5px 5px 15px #B59FD4;
+    animation: text 2s infinite;
 
 
 }
@@ -51,6 +55,8 @@
     font-weight: 400;
     font-size: 25px;
     text-align: center;
+    animation: text 2s infinite;
+
 }
 
 .conDes {
@@ -137,3 +143,27 @@
 
     }
 }
+@keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+
+    }
+  }
+  @keyframes text {
+    0%,100% {
+      transform: scale(0.75);
+      
+
+    }
+    50% {
+      transform: scale(1);
+
+    }
+  }
+
+

@@ -22,7 +22,6 @@ function Speakers(props) {
 
 
             <p className={SpeakerStyle.talktype}>{item.TalkType}</p>
-            <p className={SpeakerStyle.title}>{item.TalkTitle}</p>
 
             <div className={SpeakerStyle.imgprof} >
 
@@ -34,7 +33,7 @@ function Speakers(props) {
               <div >
                 <table className={SpeakerStyle.table} >
                   <tbody>
-                    <tr>
+                                        <tr>
                       <td className={SpeakerStyle.field}>Name</td>
                       <td>:</td>
                       <td>{item.Name}</td>
@@ -49,6 +48,12 @@ function Speakers(props) {
                       <td>:</td>
                       <td>{item.Institute}</td>
                     </tr>
+                    <tr>
+                      <td className={SpeakerStyle.field}>Title of Talk</td>
+                      <td>:</td>
+                      <td><div className={SpeakerStyle.expand}>{item.TalkTitle}</div></td>
+                    </tr>
+
                     <tr>
                       <td className={SpeakerStyle.field}>Abstract</td>
                       <td>:</td>

@@ -42,7 +42,7 @@ function Imageslider(props) {
       {!loading ? (
         <div className={SliderStyle.slider}>
           <img src={imageLinks[currentIndex]} alt="Image" className={SliderStyle.imge} />
-          <p className={SliderStyle.imgdesc} >{currentImageName}</p>
+          <div className={SliderStyle.imgdesc} >{currentImageName}</div>
         </div>
       ) : (
         <div><Loadingicon/></div>

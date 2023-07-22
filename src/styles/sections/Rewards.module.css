@@ -9,6 +9,8 @@
     margin: 15px 30px 15px 30px;
     display: inline-block;
     text-align: center;
+    animation: scaleUp 2s forwards;
+
 }
 
 .mainheading {
@@ -99,4 +101,16 @@
         
     }
    }
+   @keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+
+    }
+  }
+
    

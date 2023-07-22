@@ -12,6 +12,8 @@
     text-align: center;
     overflow: hidden;
     height: 290px;
+    animation: scaleUp 2s forwards;
+
 }
 
 .mainheading {
@@ -47,6 +49,7 @@
     background: #EFEAF6;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
 
+    
 }
 
 .desc {
@@ -67,7 +70,6 @@
 
     100% {
         transform: translateX(100%);
-        /* Move the content upward by 100% of its height */
     }
 }
 
@@ -128,3 +130,14 @@
     }
 
 }
+@keyframes scaleUp {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+
+    }
+  }

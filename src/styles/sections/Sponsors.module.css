@@ -9,6 +9,7 @@
     margin: 15px 30px 15px 30px;
     display: inline-block;
     text-align: center;
+    animation: scaleUp 2s forwards;
 
 
 }
@@ -39,6 +40,7 @@ overflow: auto;
     margin:10px;
     border-radius:20px 0 20px 0;
     border:2px solid transparent;
+    animation: scale 2s ease-in-out infinite;
 
 }
 .type{
@@ -57,10 +59,11 @@ overflow: auto;
 .onentry:hover{
     border:2px solid #562B93;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: none;
  
 }
 ::-webkit-scrollbar {
-    width: 0; /* Set the width to 0 to hide the scrollbar */
+    width: 0; 
   }
   @media(max-width:540px){
     .mainheading{
@@ -78,4 +81,14 @@ overflow: auto;
         padding: 5px;
     }
    }
+   @keyframes scale {
+    0% {
+    
+      transform: scale(0.80) ;
+    }
+
+    90%,100% {
+      transform: scale(1) ;
+    }
+  }
    

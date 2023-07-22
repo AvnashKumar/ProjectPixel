@@ -1,5 +1,6 @@
 .container {
     margin: 140px 30px 30px 30px;
+    overflow-y: hidden;
 
 }
 
@@ -14,22 +15,22 @@
 
 }
 
-
-
-
-
-
-
 .onentry {
     text-align: left;
     margin: 10px 0px 10px 0px;
     padding: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border: 1px solid #B59FD4;
     border-radius: 20px 20px 20px 20px;
     background: white;
-    animation: scrollAnimation 500ms linear 1;
+    border: 1px solid transparent;
+    border: 1px solid #B59FD4;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    animation: scrollAnimation 1.5s ease-in-out 1;
 
+}
+.onentry:hover {
+    cursor: default;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.35);
+    
 }
 
 .title {
@@ -44,19 +45,18 @@
 .desc {
     color: #562B93;
     font-size: 15px;
-    font-family: Mulish;
-    font-weight: 600;
+    font-family: 'Source Serif 4', serif;
+        font-weight: 500;
     line-height: 20px;
 
 }
 
 @keyframes scrollAnimation {
     0% {
-        transform: translateX(100%);
+        transform: translateY(100%);
     }
 
     100% {
-        transform: translateX(0%);
-        /* Move the content upward by 100% of its height */
+        transform: translateY(0%);
     }
 }

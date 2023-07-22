@@ -11,8 +11,9 @@
     width: 640px;
     padding: 20px;
     margin: 15px 15px 15px 30px;
-    
+    animation: scaleUp 2s forwards;
     text-align: center;
+
 }
 .imgdesc {
   color: #562B93;
@@ -21,7 +22,7 @@
   font-weight: 600;
   line-height: 25px;
   text-transform: capitalize;
-  z-index:5;
+  background:#EFEAF6 ;
   display: inline-block;
 }
 .imge{
@@ -45,22 +46,14 @@
     flex-direction: column;
     justify-content: center;
     height: 90%;
-    animation: fadeAnimation 1ms linear infinite;
+
     
   }
   
-  @keyframes fadeAnimation {
-    
-  }
-  @keyframes blink {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-
-    }
-  }
+ 
+  
+  
+  
   @media(max-width:1150px)
 {
   .imge{
@@ -89,4 +82,15 @@
   }
 
 
+}
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);   
+     opacity: 0;
+  }
+  100% {
+    transform: scale(1);    
+    opacity: 1;
+
+  }
 }
